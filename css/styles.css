@@ -17,17 +17,26 @@
 overlay background: rgba(25, 28, 38, 0.2);
 transform: matrix(-1, 0, 0, 1, 0, 0);
 
-
-
-
-
-
 */
+
 :root {
+  --primary-text-color: #555555;
+  --title-color: #303030;
+  --primary-white-text-color: #ffffff;
+  --grey-text-color: #9da4bd;
+  --grey-text-rgba: rgba(157, 164, 189, 0.4);
+  --accent-color: #ff6c00;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f7f7f7;
+  --black-bg-color: #191c26;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  letter-spacing: 0.02em;
+  line-height: calc(30 / 18);
 }
 
 h1,
@@ -38,6 +47,17 @@ h5,
 h6,
 ul,
 p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border: 1px dotted tomato;
 }
 
 .list,
@@ -47,11 +67,30 @@ p {
 }
 
 .title {
+  color: var(--title-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
+}
+.subtitle {
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+}
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -66,4 +105,256 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
+}
+
+/* header */
+
+.header,
+.section-hero {
+  background-color: var(--black-bg-color);
+}
+
+.nav-link,
+.tel-link {
+  color: var(--primary-white-text-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+
+/* sidebar */
+
+.social-link {
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+}
+
+.sidebar .social-link:hover,
+.sidebar .social-link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero-subtitle {
+  color: var(--grey-text-rgba);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+}
+
+.hero-title {
+  color: var(--primary-white-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+}
+
+.hero-text {
+  color: var(--grey-text-color);
+  font-size: 18px;
+}
+
+.header-button {
+  color: var(--primary-white-text-color);
+}
+
+.control-back,
+.control-forward {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+}
+
+.control-back {
+  color: var(--grey-text-rgba);
+}
+.control-forward {
+  color: var(--primary-white-text-color);
+}
+
+/* about */
+
+.text-slogan {
+  font-size: 18px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-right {
+  width: 570px;
+}
+
+.about-container {
+  display: flex;
+}
+
+/* price */
+.section-price {
+  background-color: var(--black-bg-color);
+}
+
+.section-price .subtitle {
+  color: var(--grey-text-rgba);
+}
+
+.section-price .title {
+  color: var(--primary-white-text-color);
+}
+
+.price-text {
+  color: var(--grey-text-color);
+  font-size: 18px;
+}
+
+.price-button {
+  color: var(--primary-white-text-color);
+}
+/* our feature  */
+
+.feature-list {
+  background-color: var(--secondary-bg-color);
+}
+
+.numeric {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+}
+
+.plus {
+  color: var(--accent-color);
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+}
+
+.feature-text {
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+}
+
+.feature-paragraph {
+  font-size: 18px;
+}
+/* our barbers  */
+
+.section-barbers {
+  background-color: var(--secondary-bg-color);
+}
+
+.person {
+  color: var(--title-color);
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: calc(25 / 18);
+}
+.vocation {
+  color: var(--accent-color);
+
+  font-size: 14px;
+  line-height: calc(19 / 14);
+}
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* portfolio */
+
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* online-booking */
+
+.section-booking {
+  background-color: var(--black-bg-color);
+}
+.section-booking .title {
+  color: var(--primary-white-text-color);
+}
+
+.button-booking {
+  color: var(--primary-white-text-color);
+}
+
+.text-booking {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* contacts */
+
+.section-contacts {
+  background-color: var(--black-bg-color);
+}
+
+.section-contacts .title {
+  color: var(--primary-white-text-color);
+}
+
+/* footer */
+
+.address .link {
+  font-style: normal;
+  color: var(--grey-text-color);
+}
+.city {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-mail {
+  text-decoration-line: underline;
+}
+
+.section-contacts .subtitle {
+  color: var(--primary-white-text-color);
+}
+
+.shedule {
+  color: var(--grey-text-color);
+}
+
+.copyright {
+  color: var(--grey-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
 }
