@@ -57,7 +57,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 
-  border: 1px dotted tomato;
+  outline: 1px dotted tomato;
 }
 
 .list,
@@ -91,6 +91,9 @@ p {
   border-radius: 25px;
   background-color: transparent;
   cursor: pointer;
+  text-align: center;
+  padding: 12px;
+  min-width: 160px;
 }
 
 .visually-hidden {
@@ -110,6 +113,11 @@ p {
 .card-image {
   display: block;
   max-width: 100%;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* header */
@@ -209,6 +217,16 @@ p {
 
 .about-right {
   width: 570px;
+  margin-left: auto;
+}
+
+.about-right .title,
+.text-slogan,
+.about-text {
+  margin-top: 20px;
+}
+.about-button {
+  margin-top: 42px;
 }
 
 .about-container {
