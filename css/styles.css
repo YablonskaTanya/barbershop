@@ -50,6 +50,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -122,6 +123,24 @@ p {
 
 /* header */
 
+.heder-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.header-content-second {
+  margin-left: auto;
+}
+
+.header-nav + .header-nav {
+  margin-left: 30px;
+}
+
 .header,
 .section-hero {
   background-color: var(--black-bg-color);
@@ -141,6 +160,19 @@ p {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+}
+
+/* .nav-link {
+  padding-top: 52px;
+} */
+
+.header-button {
+  color: var(--primary-white-text-color);
+  margin-left: 30px;
+}
+
+.header {
+  padding-top: 53px;
 }
 
 /* sidebar */
@@ -179,10 +211,6 @@ p {
 .hero-text {
   color: var(--grey-text-color);
   font-size: 18px;
-}
-
-.header-button {
-  color: var(--primary-white-text-color);
 }
 
 .control-back,
@@ -236,14 +264,18 @@ p {
 /* price */
 .section-price {
   background-color: var(--black-bg-color);
+  text-align: center;
 }
 
 .section-price .subtitle {
   color: var(--grey-text-rgba);
+  text-align: start;
 }
 
 .section-price .title {
   color: var(--primary-white-text-color);
+  margin-top: 20px;
+  text-align: start;
 }
 
 .price-text {
@@ -253,11 +285,69 @@ p {
 
 .price-button {
   color: var(--primary-white-text-color);
+  margin-top: 44px;
+  text-align: center;
 }
+
+.price-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+}
+.price-container-first,
+.price-container-second {
+  flex-basis: 570px;
+}
+
+.price-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list + .price-list {
+  margin-top: 20px;
+}
+
+.price-container .list {
+  padding: 30px 20px;
+}
+
 /* our feature  */
+
+.feature-container {
+  display: flex;
+  gap: 130px;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
 
 .feature-list {
   background-color: var(--secondary-bg-color);
+  text-align: center;
+  display: block;
+  padding: 20px 24px;
+  width: 170px;
+}
+
+.grid-first {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.grid-second {
+  grid-area: 3 / 1 / 5 / 2;
+}
+.grid-third {
+  grid-area: 2 / 2 / 4 / 3;
+}
+.grid-fourth {
+  grid-area: 4 / 2 / 6 / 3;
 }
 
 .numeric {
@@ -285,11 +375,23 @@ p {
 
 .feature-paragraph {
   font-size: 18px;
+  margin-top: 20px;
 }
+.section-feature .title {
+  margin-top: 20px;
+}
+
+.feature-content-second {
+  width: 500px;
+}
+
 /* our barbers  */
 
 .section-barbers {
   background-color: var(--secondary-bg-color);
+}
+.section-barbers .title {
+  margin-top: 20px;
 }
 
 .person {
@@ -307,6 +409,7 @@ p {
 .barbers-list {
   display: flex;
   gap: 30px;
+  margin-top: 44px;
 }
 
 /* portfolio */
@@ -314,6 +417,7 @@ p {
 .portfolio-list {
   display: flex;
   gap: 30px;
+  margin-top: 44px;
 }
 
 /* online-booking */
@@ -339,6 +443,10 @@ p {
 
 /* contacts */
 
+.contacts {
+  display: flex;
+}
+
 .section-contacts {
   background-color: var(--black-bg-color);
 }
@@ -349,6 +457,20 @@ p {
 
 /* footer */
 
+.footer {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+.footer-list {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
 .address .link {
   font-style: normal;
   color: var(--grey-text-color);
