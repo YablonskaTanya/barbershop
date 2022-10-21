@@ -29,6 +29,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f7f7f7;
   --black-bg-color: #191c26;
+  --cubic-brizer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -58,7 +59,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 1px dotted tomato;
+  /* outline: 1px dotted tomato; */
 }
 
 .list,
@@ -83,6 +84,17 @@ p {
   line-height: calc(15 / 11);
   text-transform: uppercase;
 }
+
+/* .subtitle::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  top: 0;
+  left: 0;
+
+  background: #303030;
+} */
 
 .button {
   font-weight: 600;
@@ -133,6 +145,9 @@ p {
 .nav-list {
   display: flex;
   align-items: center;
+}
+
+.header-content-first {
   margin-left: 100px;
 }
 
@@ -156,6 +171,7 @@ p {
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
+  transition: color 250ms var(--cubic-brizer);
 }
 
 .nav-link:hover,
@@ -185,6 +201,7 @@ p {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
+  transition: color 250ms var(--cubic-brizer);
 }
 
 .sidebar .social-link:hover,
@@ -250,6 +267,7 @@ p {
 
 .about-right {
   flex-basis: 470px;
+  position: relative;
 }
 
 .about-right .title,
@@ -268,6 +286,7 @@ p {
 }
 
 /* price */
+
 sup {
   top: -1.3em;
 }
@@ -275,6 +294,16 @@ sup {
 .section-price {
   background-color: var(--black-bg-color);
   text-align: center;
+}
+
+.price-overlay {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/price-bg.png);
+}
+.section-price .container {
+  position: relative;
 }
 
 .section-price .subtitle {
@@ -308,6 +337,13 @@ sup {
 .price-container-first,
 .price-container-second {
   flex-basis: 570px;
+}
+.price-container-first {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-container-second {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .price-list {
@@ -394,6 +430,7 @@ sup {
 }
 
 .feature-content-second {
+  position: relative;
   width: 500px;
 }
 
@@ -401,6 +438,10 @@ sup {
 
 .section-barbers {
   background-color: var(--secondary-bg-color);
+}
+
+.section-barbers .container {
+  position: relative;
 }
 
 .section-barbers .title {
@@ -412,10 +453,14 @@ sup {
   font-family: 'Open Sans';
   font-size: 18px;
   line-height: calc(25 / 18);
+  margin-top: 30px;
+  text-align: center;
 }
 
 .vocation {
   color: var(--accent-color);
+  margin-top: 8px;
+  text-align: center;
 
   font-size: 14px;
   line-height: calc(19 / 14);
@@ -427,6 +472,39 @@ sup {
   margin-top: 44px;
 }
 
+/* .barber-card {
+  flex-basis: calc(100% - 2 * 30) / 3;
+} */
+
+.social-barber-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-bg-color);
+}
+
+.social-barber-link:hover .social-icon,
+.social-barber-link:focus .social-icon {
+  fill: var(--accent-color);
+}
+
+.social-box {
+  margin-top: 30px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.social-icon {
+  fill: var(--title-color);
+  transition: fill 250ms var(--cubic-brizer);
+}
+
 /* portfolio */
 
 .portfolio-list {
@@ -435,7 +513,14 @@ sup {
   margin-top: 44px;
 }
 
+.section-portfolio .container {
+  position: relative;
+}
+
 /* online-booking */
+.container-booking-contacts {
+  display: flex;
+}
 
 .section-booking {
   background-color: var(--black-bg-color);
@@ -465,6 +550,10 @@ sup {
 
 .section-contacts {
   background-color: var(--black-bg-color);
+}
+
+.section-contacts .about-container {
+  position: relative;
 }
 
 .section-contacts .title {
