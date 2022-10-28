@@ -46,8 +46,11 @@ h3,
 h4,
 h5,
 h6,
-ul,
 p {
+  margin: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }
@@ -84,6 +87,7 @@ p {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -109,6 +113,12 @@ p {
   text-align: center;
   padding: 12px;
   min-width: 160px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-text-color);
 }
 
 .visually-hidden {
@@ -141,14 +151,13 @@ p {
   display: flex;
   align-items: center;
 }
+.logo {
+  margin-right: 132px;
+}
 
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.header-content-first {
-  margin-left: 100px;
 }
 
 .header-content-second {
@@ -180,17 +189,14 @@ p {
   color: var(--accent-color);
 }
 
-/* .nav-link {
-  padding-top: 52px;
-} */
+.nav-link {
+  display: block;
+  padding: 52px 0;
+}
 
 .header-button {
   color: var(--primary-white-text-color);
   margin-left: 30px;
-}
-
-.header {
-  padding-top: 53px;
 }
 
 /* sidebar */
@@ -569,10 +575,13 @@ sup {
 /* online-booking */
 
 .section-contacts {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: #191c26;
-  background-image: url(../images/bgcontacts.png);
+  background-image: url(../images/bgcont.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: contain;
+  background-position: left calc(50% + 397px) center;
 }
 
 .contacts-container {
@@ -627,6 +636,19 @@ sup {
 .address .link {
   font-style: normal;
   color: var(--grey-text-color);
+}
+
+.address-link {
+  display: flex;
+  align-items: center;
+}
+
+.address-icon {
+  margin-right: 20px;
+}
+
+.address-icon-top {
+  align-self: baseline;
 }
 
 .contacts-link + .contacts-link {
