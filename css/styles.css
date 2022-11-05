@@ -113,6 +113,7 @@ ul {
   text-align: center;
   padding: 12px;
   min-width: 160px;
+  transition: background-color 250ms var(--cubic-brizer), color 250ms var(--cubic-brizer);
 }
 
 .button:hover,
@@ -555,6 +556,7 @@ sup {
   gap: 10px;
   justify-content: center;
 }
+
 .social-icon {
   fill: var(--title-color);
   transition: fill 250ms var(--cubic-brizer);
