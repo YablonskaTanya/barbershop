@@ -19,16 +19,18 @@
   <body>
     <!-- header -->
 
-    <header class="header">
+    <header class="header" data-header>
       <div class="container heder-container">
         <a class="link logo" href="./"><img src="./images/Logo.svg" alt="Logo" /></a>
 
         <nav class="nav">
           <ul class="list nav-list">
-            <li class="header-nav"><a class="link nav-link" href="#">About</a></li>
-            <li class="header-nav"><a class="link nav-link" href="#">Services and prices</a></li>
-            <li class="header-nav"><a class="link nav-link" href="#">Barbers</a></li>
-            <li class="header-nav"><a class="link nav-link" href="#">Contacts</a></li>
+            <li class="header-nav"><a class="link header-nav-link" href="#">About</a></li>
+            <li class="header-nav">
+              <a class="link header-nav-link" href="#">Services and prices</a>
+            </li>
+            <li class="header-nav"><a class="link header-nav-link" href="#">Barbers</a></li>
+            <li class="header-nav"><a class="link header-nav-link" href="#">Contacts</a></li>
           </ul>
         </nav>
 
@@ -43,35 +45,32 @@
     <main>
       <!-- sidebar -->
 
-      <section class="sidebar">
-        <div class="container sidebar-container">
-          <ul class="list sidebar-list">
-            <li class="sidebar-link">
-              <a
-                class="link social-link social-link-before"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="sidebar-link">
-              <a
-                class="link social-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <!-- hero -->
 
       <section class="section-hero">
         <div class="container hero-container">
+          <div class="sidebar-container">
+            <ul class="list sidebar-list">
+              <li class="sidebar-link">
+                <a
+                  class="link social-link social-link-before"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="sidebar-link">
+                <a
+                  class="link social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-container-text">
             <p class="hero-subtitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -79,10 +78,12 @@
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
           </div>
-          <ul class="list">
-            <li><a class="link control-back" href="#">Back</a></li>
-            <li><a class="link control-forward" href="#">Forward</a></li>
-          </ul>
+          <div class="control-container">
+            <ul class="control-slider list">
+              <li><button type="button" class="link control-back" href="#">Back</button></li>
+              <li><button type="button" class="link control-forward" href="#">Forward</button></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -466,5 +467,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>
