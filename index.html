@@ -25,12 +25,18 @@
 
         <nav class="nav">
           <ul class="list nav-list">
-            <li class="header-nav"><a class="link header-nav-link" href="#">About</a></li>
             <li class="header-nav">
-              <a class="link header-nav-link" href="#">Services and prices</a>
+              <a class="link header-nav-link" href="#about">About</a>
             </li>
-            <li class="header-nav"><a class="link header-nav-link" href="#">Barbers</a></li>
-            <li class="header-nav"><a class="link header-nav-link" href="#">Contacts</a></li>
+            <li class="header-nav">
+              <a class="link header-nav-link" href="#servises-and-prices">Services and prices</a>
+            </li>
+            <li class="header-nav">
+              <a class="link header-nav-link" href="#barbers">Barbers</a>
+            </li>
+            <li class="header-nav">
+              <a class="link header-nav-link" href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
 
@@ -43,14 +49,13 @@
     </header>
 
     <main>
-      <!-- sidebar -->
-
       <!-- hero -->
 
       <section class="section-hero">
         <div class="container hero-container">
           <div class="sidebar-container">
             <ul class="list sidebar-list">
+              <!-- sidebar -->
               <li class="sidebar-link">
                 <a
                   class="link social-link social-link-before"
@@ -89,7 +94,7 @@
 
       <!-- about -->
 
-      <section class="section section-about">
+      <section class="section section-about" id="about">
         <div class="container about-container">
           <div class="about-left">
             <ul class="list about-list">
@@ -126,7 +131,7 @@
 
       <!-- price -->
 
-      <section class="section section-price price-overlay">
+      <section class="section section-price price-overlay" id="servises-and-prices">
         <div class="container">
           <p class="subtitle">Spend your time with the best masters</p>
           <h2 class="title">Services and prices</h2>
@@ -221,7 +226,7 @@
 
       <!-- our barbers -->
 
-      <section class="section section-barbers">
+      <section class="section section-barbers" id="barbers">
         <div class="container">
           <p class="subtitle">For true enjoyers of the atmosphere</p>
           <h2 class="title">Our barbers</h2>
@@ -389,25 +394,30 @@
         <div class="container contacts-container">
           <section class="container-booking">
             <h2 class="booing-title title">Online-booking</h2>
-            <ul class="list">
-              <li>
-                <p class="booking-text">Name</p>
-                <sup>*</sup>
-              </li>
-              <li>
-                <p class="booking-text">Phone</p>
-                <sup>*</sup>
-              </li>
-              <li>
-                <p class="booking-text">Message</p>
-              </li>
-            </ul>
+
+            <form class="booking-form" name="booking_form">
+              <div class="booking-form-group">
+                <label class="booking-form-field">
+                  <input class="booking-form-input" type="text" name="user_name" />
+                  <span class="booking-form-label">Name*</span>
+                </label>
+                <label class="booking-form-field">
+                  <input class="booking-form-input" type="tel" name="user_phohe" />
+                  <span class="booking-form-label">Phone*</span>
+                </label>
+              </div>
+              <label class="booking-form-massage">
+                <textarea class="booking-form-textarea" name="user_massage" rows="5"></textarea>
+                <span class="booking-form-label">Message</span>
+              </label>
+            </form>
+
             <button class="button button-booking" type="button">send</button>
           </section>
 
           <!-- contacts -->
 
-          <section class="container-contacts">
+          <section class="container-contacts" id="contacts">
             <h2 class="contacts-title title">Contacts</h2>
             <address class="address">
               <ul class="list">

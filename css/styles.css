@@ -25,6 +25,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   --primary-white-text-color: #ffffff;
   --grey-text-color: #9da4bd;
   --grey-text-rgba: rgba(157, 164, 189, 0.4);
+
   --accent-color: #ff6c00;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f7f7f7;
@@ -211,13 +212,13 @@ ul {
   height: 4px;
   border-radius: 4px;
   opacity: 0;
-  /* transform: scaleX(0.1); */
-  transition: opacity 250ms var(--cubic-brizer) transform 250ms var(--cubic-brizer);
+  transform: scaleX(0.2);
+  transition: opacity 250ms var(--cubic-brizer), transform 250ms var(--cubic-brizer);
 }
 
 .header-nav-link:hover::after {
   opacity: 1;
-  /* transform: scaleX(1); */
+  transform: scaleX(1);
 }
 
 .header-button {
@@ -233,12 +234,18 @@ ul {
 /* sidebar */
 
 .sidebar-container {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 58px;
   width: 100px;
 }
 
 .sidebar-list {
+  position: absolute;
+
+  transform: rotate(-90deg);
+  bottom: 175px;
+  left: -65px;
   display: flex;
   gap: 40px;
   align-items: center;
@@ -263,8 +270,8 @@ ul {
   transition: color 250ms var(--cubic-brizer);
 }
 
-.sidebar .social-link:hover,
-.sidebar .social-link:focus {
+.sidebar-link .social-link:hover,
+.sidebar-link .social-link:focus {
   color: var(--accent-color);
 }
 
@@ -665,6 +672,7 @@ sup {
 }
 
 .button-booking {
+  margin-top: 44px;
   color: var(--primary-white-text-color);
 }
 
@@ -674,6 +682,63 @@ sup {
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.booking-form {
+  margin-top: 44px;
+}
+.booking-form-group {
+  display: flex;
+  gap: 30px;
+}
+
+.booking-form-field,
+.booking-form-massage {
+  position: relative;
+  display: block;
+}
+
+.booking-form-field {
+  flex-basis: 270px;
+
+  border-bottom: 1px solid var(--grey-text-rgba);
+}
+
+.booking-form-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+}
+
+.booking-form-label {
+  position: absolute;
+
+  left: 0;
+  bottom: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey-text-rgba);
+}
+
+.booking-form-massage {
+  margin-top: 44px;
+}
+
+.booking-form-massage .booking-form-label {
+  top: 0;
+}
+
+.booking-form-textarea {
+  width: 570px;
+  border: none;
+  border-bottom: 1px solid var(--grey-text-rgba);
+  background-color: transparent;
+  outline: transparent;
 }
 
 /* contacts */
