@@ -634,6 +634,7 @@ sup {
   display: flex;
   gap: 30px;
   margin-top: 44px;
+  cursor: pointer;
 
   /* perspective: 200px; */
 }
@@ -752,6 +753,10 @@ sup {
   border-bottom: 1px solid var(--grey-text-rgba);
   background-color: transparent;
   outline: transparent;
+}
+
+textarea {
+  resize: none;
 }
 
 /* contacts */
