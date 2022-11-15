@@ -144,6 +144,11 @@ img {
   padding-bottom: 120px;
 }
 
+.no-transparency {
+  background-color: rgba(25, 28, 38, 0.5);
+  backdrop-filter: blur(4px);
+}
+
 /* header */
 
 .heder__container {
@@ -222,11 +227,6 @@ img {
   color: var(--primary-white-text-color);
   margin-left: 30px;
 }
-
-/* .no-transparency {
-  background-color: rgba(25, 28, 38, 0.5);
-  backdrop-filter: blur(4px);
-} */
 
 /* sidebar */
 
