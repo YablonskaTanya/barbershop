@@ -14,6 +14,10 @@
   margin-top: 70px;
 }
 
+.contacts__subtitle::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
 .contacts__shedule {
   color: $grey-text-color;
   margin-top: 20px;

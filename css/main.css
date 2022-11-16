@@ -1022,6 +1022,10 @@ textarea {
   margin-top: 70px;
 }
 
+.contacts__subtitle::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
 .contacts__shedule {
   color: #9da4bd;
   margin-top: 20px;
