@@ -1,0 +1,20 @@
+.portfolio__container {
+  position: relative;
+}
+
+.portfolio__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+  cursor: pointer;
+}
+
+.portfolio__item {
+  overflow: hidden;
+  transform: rotateY(0);
+  transition: transform 250ms $cubic-brizer;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}

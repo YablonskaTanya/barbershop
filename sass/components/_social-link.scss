@@ -1,0 +1,18 @@
+.social-link__before:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: #303030;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: $title-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  transition: color 250ms $cubic-brizer;
+}

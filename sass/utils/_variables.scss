@@ -1,0 +1,19 @@
+$primary-text-color: #555555;
+$title-color: #303030;
+$primary-white-text-color: #ffffff;
+$grey-text-color: #9da4bd;
+$grey-text-rgba: rgba(157, 164, 189, 0.4);
+
+$accent-color: #ff6c00;
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #f7f7f7;
+$black-bg-color: #191c26;
+$cubic-brizer: cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+  letter-spacing: 0.02em;
+  line-height: calc(30 / 18);
+}

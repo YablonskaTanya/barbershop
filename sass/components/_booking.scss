@@ -1,0 +1,70 @@
+.booking {
+  flex-basis: 570px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.booking__title {
+  color: $primary-white-text-color;
+}
+
+.booking__form {
+  margin-top: 44px;
+}
+
+.booking__form--group {
+  display: flex;
+  gap: 30px;
+}
+
+.booking__form--field {
+  flex-basis: 270px;
+  border-bottom: 1px solid $grey-text-rgba;
+}
+
+.booking__form--input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+}
+
+.booking__form--label {
+  position: absolute;
+
+  left: 0;
+  bottom: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $grey-text-rgba;
+}
+
+.booking__form--massage {
+  margin-top: 44px;
+}
+
+.booking__form--massage .booking__form--label {
+  top: 0;
+}
+
+.booking__form--textarea {
+  width: 570px;
+  border: none;
+  border-bottom: 1px solid $grey-text-rgba;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.booking__form--field,
+.booking__form--massage {
+  position: relative;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}

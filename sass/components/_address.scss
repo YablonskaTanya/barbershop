@@ -1,0 +1,36 @@
+.address {
+  margin-top: 40px;
+}
+
+.address__item {
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.address__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  color: $grey-text-color;
+}
+
+.address__icon {
+  margin-right: 20px;
+}
+
+.address__icon--top {
+  align-self: baseline;
+}
+
+.address__link + .address__link {
+  margin-top: 20px;
+}
+
+.address__mail {
+  text-decoration-line: underline;
+}

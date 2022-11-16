@@ -1,0 +1,22 @@
+.sidebar {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 58px;
+  width: 100px;
+}
+
+.sidebar__list {
+  position: absolute;
+
+  transform: rotate(-90deg);
+  bottom: 175px;
+  left: -65px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.sidebar__item .social-link:hover,
+.sidebar__item .social-link:focus {
+  color: $accent-color;
+}

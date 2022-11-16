@@ -1,0 +1,38 @@
+.control__slider {
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
+
+  display: flex;
+  text-align: center;
+  gap: 24px;
+}
+
+.control__slider--back,
+.control__slider--forward {
+  min-width: 60px;
+  min-height: 24px;
+  padding: 0;
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+  background-color: transparent;
+}
+
+.control__slider--back {
+  color: $grey-text-rgba;
+  text-align: start;
+  cursor: not-allowed;
+}
+
+.control__slider--forward {
+  border-bottom: 1px solid $primary-white-text-color;
+  color: $primary-white-text-color;
+  text-align: end;
+}

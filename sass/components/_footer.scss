@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.copyright {
+  color: $grey-text-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+}
