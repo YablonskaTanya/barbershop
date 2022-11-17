@@ -15,18 +15,41 @@
 .booking__form--group {
   display: flex;
   gap: 30px;
+  margin-bottom: 44px;
 }
 
 .booking__form--field {
+  position: relative;
   flex-basis: 270px;
-  border-bottom: 1px solid $grey-text-rgba;
+  display: block;
 }
 
-.booking__form--input {
+.booking__form--input,
+.booking__form--textarea {
   width: 100%;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid $grey-text-color;
   outline: transparent;
+  color: $primary-white-text-color;
+  transition: 250ms;
+}
+
+.booking__form--input::placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+}
+
+.booking__form--input:focus::placeholder {
+  opacity: 1;
+}
+.booking__form--input:focus {
+  border-bottom: 1px solid $primary-white-text-color;
+}
+
+.booking__form--input:focus,
+.booking__form--input:not(:placeholder-shown) {
+  border-color: $primary-white-text-color;
 }
 
 .booking__form--label {
@@ -41,30 +64,30 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $grey-text-rgba;
+  transform-origin: left;
+  transition: 250ms;
 }
 
-.booking__form--massage {
-  margin-top: 44px;
+.booking__form--input:focus + .booking__form--label,
+.booking__form--input:not(:placeholder-shown) + .booking__form--label {
+  transform: translateY(-25px) scale(0.8);
+  color: $primary-white-text-color;
 }
 
-.booking__form--massage .booking__form--label {
+// .booking__form--massage {
+//   margin-top: 44px;
+// }
+
+.booking__form--textarea + .booking__form--label {
   top: 0;
 }
 
 .booking__form--textarea {
-  width: 570px;
-  border: none;
-  border-bottom: 1px solid $grey-text-rgba;
-  background-color: transparent;
-  outline: transparent;
+  height: 76px;
+  resize: none;
 }
 
-.booking__form--field,
 .booking__form--massage {
   position: relative;
   display: block;
-}
-
-textarea {
-  resize: none;
 }

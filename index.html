@@ -385,16 +385,32 @@
             <form class="booking__form" name="booking_form">
               <div class="booking__form--group">
                 <label class="booking__form--field">
-                  <input class="booking__form--input" type="text" name="user_name" />
+                  <input
+                    class="booking__form--input"
+                    type="text"
+                    name="user_name"
+                    placeholder="Alex Martin"
+                  />
                   <span class="booking__form--label">Name*</span>
                 </label>
                 <label class="booking__form--field">
-                  <input class="booking__form--input" type="tel" name="user_phohe" />
+                  <input
+                    class="booking__form--input"
+                    type="tel"
+                    name="user_phohe"
+                    placeholder="+380..."
+                  />
                   <span class="booking__form--label">Phone*</span>
                 </label>
               </div>
               <label class="booking__form--massage">
-                <input class="booking__form--textarea" name="user_massage" rows="5" />
+                <textarea
+                  class="booking__form--textarea"
+                  name="user_massage"
+                  rows="5"
+                  placeholder="Type your massage..."
+                >
+                </textarea>
                 <span class="booking_-form--label">Massage</span>
               </label>
             </form>

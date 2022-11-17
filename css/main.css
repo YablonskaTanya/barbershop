@@ -1072,19 +1072,88 @@ sup {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  margin-bottom: 44px;
 }
 
 .booking__form--field {
+  position: relative;
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  display: block;
 }
 
-.booking__form--input {
+.booking__form--input,
+.booking__form--textarea {
   width: 100%;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid #9da4bd;
   outline: transparent;
+  color: #ffffff;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input::-webkit-input-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+}
+
+.booking__form--input::-moz-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+}
+
+.booking__form--input:-ms-input-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+}
+
+.booking__form--input::-ms-input-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+}
+
+.booking__form--input::placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+}
+
+.booking__form--input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus::placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.booking__form--input:not(:-moz-placeholder-shown) {
+  border-color: #ffffff;
+}
+
+.booking__form--input:not(:-ms-input-placeholder) {
+  border-color: #ffffff;
+}
+
+.booking__form--input:focus,
+.booking__form--input:not(:placeholder-shown) {
+  border-color: #ffffff;
 }
 
 .booking__form--label {
@@ -1097,32 +1166,41 @@ sup {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
-.booking__form--massage {
-  margin-top: 44px;
+.booking__form--input:not(:-moz-placeholder-shown) + .booking__form--label {
+  transform: translateY(-25px) scale(0.8);
+  color: #ffffff;
 }
 
-.booking__form--massage .booking__form--label {
+.booking__form--input:not(:-ms-input-placeholder) + .booking__form--label {
+  transform: translateY(-25px) scale(0.8);
+  color: #ffffff;
+}
+
+.booking__form--input:focus + .booking__form--label,
+.booking__form--input:not(:placeholder-shown) + .booking__form--label {
+  -webkit-transform: translateY(-25px) scale(0.8);
+          transform: translateY(-25px) scale(0.8);
+  color: #ffffff;
+}
+
+.booking__form--textarea + .booking__form--label {
   top: 0;
 }
 
 .booking__form--textarea {
-  width: 570px;
-  border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  background-color: transparent;
-  outline: transparent;
+  height: 76px;
+  resize: none;
 }
 
-.booking__form--field,
 .booking__form--massage {
   position: relative;
   display: block;
-}
-
-textarea {
-  resize: none;
 }
 
 .button__booking {
@@ -1255,15 +1333,25 @@ textarea {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
+}
+
 .modal {
   position: absolute;
   width: 400px;
   height: 500px;
   background-color: #fff;
+  border-radius: 2px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 .close-button {
