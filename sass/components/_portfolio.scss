@@ -11,10 +11,14 @@
 
 .portfolio__item {
   overflow: hidden;
-  transform: rotateY(0);
-  transition: transform 250ms $cubic-brizer;
+
+  transition: transform 250ms $cubic-brizer, box-shadow 250ms $cubic-brizer;
+  transform-origin: 50% 0;
+  transform: perspective(800px) rotateX(0deg) translateZ(0);
 
   &:hover {
-    transform: rotateY(180deg);
+    // transform: perspective(800px) rotateX(7deg) translateZ(0, -25px, 10px);
+    transform: perspective(800px) rotateX(7deg) translate3d(0, -25px, 10px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 }

@@ -43,7 +43,9 @@
         <div class="header-contact">
           <a class="header-contact__link" href="tel:+380441111111">+38 044 111 11 11</a>
 
-          <button class="button button__header" type="button">Online-booking</button>
+          <button class="button button__header" data-modal-open type="button">
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
@@ -95,10 +97,10 @@
         <div class="container about__container">
           <div class="about-left">
             <ul class="about__list">
-              <li>
+              <li class="about__item">
                 <img class="about__image" src="./images/shave.jpg" width="270" alt="barber shave" />
               </li>
-              <li>
+              <li class="about__item">
                 <img
                   class="about__image"
                   src="./images/haircut.jpg"
@@ -463,6 +465,18 @@
         </ul>
       </div>
     </footer>
+
+    <!-- model -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close type="button">
+          <svg class="" width="20" height="20">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/header-scroll.js"></script>
   </body>
 </html>

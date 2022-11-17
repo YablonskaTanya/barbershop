@@ -27,6 +27,24 @@
   font-size: 11px;
   line-height: calc(15 / 11);
   text-transform: uppercase;
+
+  animation: slider-to-bottom 500ms ease-out 200ms both;
+}
+
+@keyframes slider-to-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .hero__subtitle::before {
@@ -46,6 +64,25 @@
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
   margin-top: 20px;
+
+  animation: slider-to-right 1000ms ease-in-out 700ms both;
+}
+
+@keyframes slider-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0);
+    letter-spacing: 0.3em;
+  }
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0.05em;
+  }
 }
 
 .hero__text {
@@ -53,4 +90,21 @@
   font-size: 18px;
   margin-top: 20px;
   width: 357px;
+
+  animation: slider-to-top 500ms ease-out 1200ms both;
+}
+
+@keyframes slider-to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

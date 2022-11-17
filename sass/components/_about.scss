@@ -8,6 +8,17 @@
   gap: 30px;
 }
 
+.about__item {
+  overflow: hidden;
+}
+.about__image {
+  transition: transform 500ms;
+}
+
+.about__item:hover .about__image {
+  transform: scale(1.2);
+}
+
 .about-right {
   flex-basis: 470px;
   position: relative;
