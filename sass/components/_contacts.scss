@@ -12,10 +12,10 @@
 .contacts__subtitle {
   color: $primary-white-text-color;
   margin-top: 70px;
-}
 
-.contacts__subtitle::before {
-  background-color: rgba(157, 164, 189, 0.4);
+  &::before {
+    background-color: rgba(157, 164, 189, 0.4);
+  }
 }
 
 .contacts__shedule {

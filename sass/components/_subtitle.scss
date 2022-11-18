@@ -7,13 +7,13 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
 
-.subtitle::before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 1px;
-  margin-right: 20px;
-  background-color: #303030;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: #303030;
+  }
 }

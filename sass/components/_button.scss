@@ -12,10 +12,10 @@
   padding: 12px;
   min-width: 160px;
   transition: background-color 250ms $cubic-brizer, color 250ms $cubic-brizer;
-}
 
-.button:hover,
-.button:focus {
-  background-color: $accent-color;
-  color: $primary-white-text-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-text-color;
+  }
 }

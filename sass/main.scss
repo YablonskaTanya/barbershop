@@ -1,7 +1,17 @@
+// base
+
 @import './base/normalize';
+
+// utils
+
 @import './utils/variables';
 @import './utils/common-styles';
 @import './utils/visually-hidden';
+@import './utils/animation';
+@import './utils/mixin';
+
+// components
+
 @import './components/button';
 @import './components/title';
 @import './components/subtitle';
