@@ -1076,81 +1076,6 @@ sup {
   position: relative;
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
-  display: block;
-}
-
-.booking__form--input,
-.booking__form--textarea {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #9da4bd;
-  outline: transparent;
-  color: #ffffff;
-  -webkit-transition: 250ms;
-  transition: 250ms;
-}
-
-.booking__form--input::-webkit-input-placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-}
-
-.booking__form--input::-moz-placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-}
-
-.booking__form--input:-ms-input-placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-}
-
-.booking__form--input::-ms-input-placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-}
-
-.booking__form--input::placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-}
-
-.booking__form--input:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.booking__form--input:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.booking__form--input:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.booking__form--input:focus::-ms-input-placeholder {
-  opacity: 1;
-}
-
-.booking__form--input:focus::placeholder {
-  opacity: 1;
-}
-
-.booking__form--input:focus {
-  border-bottom: 1px solid #ffffff;
-}
-
-.booking__form--input:not(:-moz-placeholder-shown) {
-  border-color: #ffffff;
-}
-
-.booking__form--input:not(:-ms-input-placeholder) {
-  border-color: #ffffff;
-}
-
-.booking__form--input:focus,
-.booking__form--input:not(:placeholder-shown) {
-  border-color: #ffffff;
 }
 
 .booking__form--label {
@@ -1169,6 +1094,75 @@ sup {
   transition: 250ms;
 }
 
+.booking__form--input,
+.booking__form--textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9da4bd;
+  outline: transparent;
+  color: #ffffff;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input::-webkit-input-placeholder, .booking__form--textarea::-webkit-input-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input::-moz-placeholder, .booking__form--textarea::-moz-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+  -moz-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input:-ms-input-placeholder, .booking__form--textarea:-ms-input-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+  -ms-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input::-ms-input-placeholder, .booking__form--textarea::-ms-input-placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+  -ms-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input::placeholder,
+.booking__form--textarea::placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.booking__form--input:focus::-webkit-input-placeholder, .booking__form--textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus::-moz-placeholder, .booking__form--textarea:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus:-ms-input-placeholder, .booking__form--textarea:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus::-ms-input-placeholder, .booking__form--textarea:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.booking__form--input:focus::placeholder,
+.booking__form--textarea:focus::placeholder {
+  opacity: 1;
+}
+
 .booking__form--input:not(:-moz-placeholder-shown) + .booking__form--label {
   transform: translateY(-25px) scale(0.8);
   color: #ffffff;
@@ -1184,6 +1178,25 @@ sup {
   -webkit-transform: translateY(-25px) scale(0.8);
           transform: translateY(-25px) scale(0.8);
   color: #ffffff;
+}
+
+.booking__form--textarea:focus + .booking__form--label {
+  -webkit-transform: translateY(-25px) scale(0.8);
+          transform: translateY(-25px) scale(0.8);
+  color: #ffffff;
+}
+
+.booking__form--input:not(:-moz-placeholder-shown) {
+  border-color: #ffffff;
+}
+
+.booking__form--input:not(:-ms-input-placeholder) {
+  border-color: #ffffff;
+}
+
+.booking__form--input:focus,
+.booking__form--input:not(:placeholder-shown) {
+  border-color: #ffffff;
 }
 
 .booking__form--textarea + .booking__form--label {
@@ -1243,6 +1256,10 @@ sup {
           align-items: center;
 }
 
+.address__item + .address__item {
+  margin-top: 20px;
+}
+
 .city {
   font-weight: 700;
   font-size: 18px;
@@ -1266,10 +1283,6 @@ sup {
 .address__icon--top {
   -ms-flex-item-align: baseline;
       align-self: baseline;
-}
-
-.address__link + .address__link {
-  margin-top: 20px;
 }
 
 .address__mail {

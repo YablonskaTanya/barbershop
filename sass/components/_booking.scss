@@ -21,35 +21,6 @@
 .booking__form--field {
   position: relative;
   flex-basis: 270px;
-  display: block;
-}
-
-.booking__form--input,
-.booking__form--textarea {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid $grey-text-color;
-  outline: transparent;
-  color: $primary-white-text-color;
-  transition: 250ms;
-}
-
-.booking__form--input::placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-}
-
-.booking__form--input:focus::placeholder {
-  opacity: 1;
-}
-.booking__form--input:focus {
-  border-bottom: 1px solid $primary-white-text-color;
-}
-
-.booking__form--input:focus,
-.booking__form--input:not(:placeholder-shown) {
-  border-color: $primary-white-text-color;
 }
 
 .booking__form--label {
@@ -68,10 +39,43 @@
   transition: 250ms;
 }
 
+.booking__form--input,
+.booking__form--textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $grey-text-color;
+  outline: transparent;
+  color: $primary-white-text-color;
+  transition: 250ms;
+}
+
+.booking__form--input::placeholder,
+.booking__form--textarea::placeholder {
+  opacity: 0;
+  color: rgb(82, 98, 98);
+  transition: 250ms;
+}
+
+.booking__form--input:focus::placeholder,
+.booking__form--textarea:focus::placeholder {
+  opacity: 1;
+}
+
 .booking__form--input:focus + .booking__form--label,
 .booking__form--input:not(:placeholder-shown) + .booking__form--label {
   transform: translateY(-25px) scale(0.8);
   color: $primary-white-text-color;
+}
+
+.booking__form--textarea:focus + .booking__form--label {
+  transform: translateY(-25px) scale(0.8);
+  color: $primary-white-text-color;
+}
+
+.booking__form--input:focus,
+.booking__form--input:not(:placeholder-shown) {
+  border-color: $primary-white-text-color;
 }
 
 .booking__form--textarea + .booking__form--label {

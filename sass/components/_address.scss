@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.address__item + .address__item {
+  margin-top: 20px;
+}
+
 .city {
   font-weight: 700;
   font-size: 18px;
@@ -25,10 +29,6 @@
 
 .address__icon--top {
   align-self: baseline;
-}
-
-.address__link + .address__link {
-  margin-top: 20px;
 }
 
 .address__mail {
