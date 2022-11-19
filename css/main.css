@@ -1331,6 +1331,8 @@ sup {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
