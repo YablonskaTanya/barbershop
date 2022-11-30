@@ -275,7 +275,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -459,20 +458,6 @@ img {
   z-index: 1;
 }
 
-.heder__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-contact {
-  margin-left: auto;
-  padding-right: 20px;
-}
-
 .header-contact__link {
   color: #ffffff;
   font-weight: 600;
@@ -558,6 +543,11 @@ img {
   padding-bottom: 58px;
   width: 100px;
 }
+@media screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 .sidebar__list {
   position: absolute;
@@ -589,12 +579,6 @@ img {
 }
 
 .social-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #303030;
   font-weight: 600;
   font-size: 11px;
@@ -711,20 +695,6 @@ img {
   text-align: end;
 }
 
-.about__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.about__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
 .about__item {
   overflow: hidden;
 }
@@ -754,16 +724,6 @@ img {
 .about__text {
   font-size: 14px;
   line-height: 1.8571428571;
-}
-
-.about__title,
-.about__slogan,
-.about__text {
-  margin-top: 20px;
-}
-
-.button__about {
-  margin-top: 42px;
 }
 
 sup {
@@ -800,14 +760,6 @@ sup {
   text-align: start;
 }
 
-.price-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  margin-top: 44px;
-}
-
 .price-container__first,
 .price-container__second {
   -ms-flex-preferred-size: 570px;
@@ -833,15 +785,6 @@ sup {
   font-size: 18px;
 }
 
-.price__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .price__list + .price__list {
   margin-top: 20px;
 }
@@ -850,15 +793,6 @@ sup {
   color: #ffffff;
   margin-top: 44px;
   text-align: center;
-}
-
-.feature__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 130px;
-  padding-left: 100px;
-  padding-right: 70px;
 }
 
 .feature__item {
@@ -913,7 +847,6 @@ sup {
 
 .feature__container--second {
   position: relative;
-  width: 500px;
 }
 
 .feature__title {
@@ -943,23 +876,13 @@ sup {
   font-size: 18px;
   line-height: 1.3888888889;
   margin-top: 30px;
-  text-align: center;
 }
 
 .barbers__vocation {
   color: #ff6c00;
   margin-top: 8px;
-  text-align: center;
   font-size: 14px;
   line-height: 1.3571428571;
-}
-
-.barbers-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  margin-top: 44px;
 }
 
 .social-box {
@@ -971,9 +894,6 @@ sup {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .social-box__link {
@@ -1006,11 +926,6 @@ sup {
 }
 
 .portfolio__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  margin-top: 44px;
   cursor: pointer;
 }
 
@@ -1042,34 +957,12 @@ sup {
   background-position: left calc(50% + 397px) center;
 }
 
-.our-contacts__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.booking {
-  -ms-flex-preferred-size: 570px;
-      flex-basis: 570px;
-  padding-top: 130px;
-  padding-bottom: 120px;
-}
-
 .booking__title {
   color: #ffffff;
 }
 
 .booking__form {
   margin-top: 44px;
-}
-
-.booking__form--group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  margin-bottom: 44px;
 }
 
 .booking__form--field {
@@ -1096,7 +989,7 @@ sup {
 
 .booking__form--input,
 .booking__form--textarea {
-  width: 100%;
+  max-width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9da4bd;
@@ -1243,19 +1136,6 @@ sup {
   margin-top: 20px;
 }
 
-.address {
-  margin-top: 40px;
-}
-
-.address__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .address__item + .address__item {
   margin-top: 20px;
 }
@@ -1293,26 +1173,6 @@ sup {
 .footer {
   padding-top: 53px;
   padding-bottom: 53px;
-}
-
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
 }
 
 .copyright {

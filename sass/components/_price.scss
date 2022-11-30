@@ -32,11 +32,11 @@ sup {
   text-align: start;
 }
 
-.price-container {
-  display: flex;
-  gap: 30px;
-  margin-top: 44px;
-}
+// .price-container {
+//   display: flex;
+//   gap: 30px;
+//   margin-top: 44px;
+// }
 
 .price-container__first,
 .price-container__second {
@@ -60,10 +60,10 @@ sup {
   font-size: 18px;
 }
 
-.price__list {
-  display: flex;
-  justify-content: space-between;
-}
+// .price__list {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .price__list + .price__list {
   margin-top: 20px;
