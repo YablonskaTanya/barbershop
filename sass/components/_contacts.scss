@@ -1,12 +1,23 @@
 .contacts {
-  flex-basis: 570px;
-  padding-top: 130px;
-  padding-bottom: 120px;
-  padding-left: 100px;
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    flex-basis: 570px;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+  }
 }
 
 .contacts__title {
   color: $primary-white-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .contacts__subtitle {

@@ -19,7 +19,7 @@
   <body>
     <!-- header -->
 
-    <header class="header" data-header>
+    <!-- <header class="header" data-header>
       <div class="container heder__container">
         <a class="logo" href="./"><img src="./images/Logo.svg" alt="Logo" /></a>
 
@@ -48,15 +48,13 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- hero -->
-
+      <!-- 
       <section class="hero">
         <div class="container hero__container">
-          <!-- sidebar -->
-
           <div class="sidebar">
             <ul class="sidebar__list">
               <li class="sidebar__item">
@@ -89,7 +87,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- about -->
 
@@ -232,7 +230,7 @@
 
           <ul class="barbers-list">
             <li class="barbers-list__item">
-              <img src="./images/john.jpg" width="370" alt="John Smith" />
+              <img class="barbers__img" src="./images/john.jpg" width="370" alt="John Smith" />
               <div>
                 <h3 class="barbers__name">John Smith</h3>
                 <p class="barbers__vocation">Extreme Barber</p>
@@ -271,7 +269,7 @@
               </div>
             </li>
             <li class="barbers-list__item">
-              <img src="./images/michele.jpg" width="370" alt="Michele Doe" />
+              <img class="barbers__img" src="./images/michele.jpg" width="370" alt="Michele Doe" />
               <div>
                 <h3 class="barbers__name">Michele Doe</h3>
                 <p class="barbers__vocation">Extreme Barber</p>
@@ -310,7 +308,7 @@
               </div>
             </li>
             <li class="barbes-list__item">
-              <img src="./images/alan.jpg" width="370" alt="Alan Black" />
+              <img class="barbers__img" src="./images/alan.jpg" width="370" alt="Alan Black" />
               <div>
                 <h3 class="barbers__name">Alan Black</h3>
                 <p class="barbers__vocation">Extreme Barber</p>
@@ -360,16 +358,31 @@
           <h2 class="visually-hidden">Our portfolio</h2>
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <img src="./images/haircutting.jpg" width="270" alt="haircut" />
+              <img
+                class="portfolio__img"
+                src="./images/haircutting.jpg"
+                width="270"
+                alt="haircut"
+              />
             </li>
             <li class="portfolio__item">
-              <img src="./images/snaving.jpg" width="270" alt="snaving" />
+              <img class="portfolio__img" src="./images/snaving.jpg" width="270" alt="snaving" />
             </li>
             <li class="portfolio__item">
-              <img src="./images/steamout.jpg" width="270" alt="steam out face" />
+              <img
+                class="portfolio__img"
+                src="./images/steamout.jpg"
+                width="270"
+                alt="steam out face"
+              />
             </li>
             <li class="portfolio__item">
-              <img src="./images/shaverazor.jpg" width="270" alt="shave a razor" />
+              <img
+                class="portfolio__img"
+                src="./images/shaverazor.jpg"
+                width="270"
+                alt="shave a razor"
+              />
             </li>
           </ul>
         </div>
@@ -393,7 +406,7 @@
                   />
                   <span class="booking__form--label">Name*</span>
                 </label>
-                <label class="booking__form--field">
+                <label class="booking__form--field booking__form--field-second">
                   <input
                     class="booking__form--input"
                     type="tel"
@@ -434,11 +447,7 @@
                     ><svg class="address__icon address__icon--top" width="24" height="24">
                       <use href="./images/sprite.svg#map"></use>
                     </svg>
-                    <span
-                      >st. Vasilkovaya, 7A
-                      <br />
-                      Kiev, 08132</span
-                    >
+                    <span>st. Vasilkovaya, 7A Kiev, 08132</span>
                   </a>
                 </li>
                 <li class="address__item">

@@ -1,93 +1,20 @@
-// .booking {
-//   flex-basis: 570px;
-//   padding-top: 130px;
-//   padding-bottom: 120px;
-// }
+.booking {
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    flex-basis: 570px;
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+}
 
 .booking__title {
   color: $primary-white-text-color;
-}
 
-.booking__form {
-  margin-top: 44px;
-}
-
-// .booking__form--group {
-//   display: flex;
-//   gap: 30px;
-//   margin-bottom: 44px;
-// }
-
-.booking__form--field {
-  position: relative;
-  flex-basis: 270px;
-}
-
-.booking__form--label {
-  position: absolute;
-
-  left: 0;
-  bottom: 8px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $grey-text-rgba;
-  transform-origin: left;
-  transition: 250ms;
-}
-
-.booking__form--input,
-.booking__form--textarea {
-  max-width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid $grey-text-color;
-  outline: transparent;
-  color: $primary-white-text-color;
-  transition: 250ms;
-}
-
-.booking__form--input::placeholder,
-.booking__form--textarea::placeholder {
-  opacity: 0;
-  color: rgb(82, 98, 98);
-  transition: 250ms;
-}
-
-.booking__form--input:focus::placeholder,
-.booking__form--textarea:focus::placeholder {
-  opacity: 1;
-}
-
-.booking__form--input:focus + .booking__form--label,
-.booking__form--input:not(:placeholder-shown) + .booking__form--label {
-  transform: translateY(-25px) scale(0.8);
-  color: $primary-white-text-color;
-}
-
-.booking__form--textarea:focus + .booking__form--label {
-  transform: translateY(-25px) scale(0.8);
-  color: $primary-white-text-color;
-}
-
-.booking__form--input:focus,
-.booking__form--input:not(:placeholder-shown) {
-  border-color: $primary-white-text-color;
-}
-
-.booking__form--textarea + .booking__form--label {
-  top: 0;
-}
-
-.booking__form--textarea {
-  height: 76px;
-  resize: none;
-}
-
-.booking__form--massage {
-  position: relative;
-  display: block;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }

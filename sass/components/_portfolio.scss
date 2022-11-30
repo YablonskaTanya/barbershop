@@ -3,10 +3,14 @@
 }
 
 .portfolio__list {
-  // display: flex;
-  // gap: 30px;
-  // margin-top: 44px;
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
   cursor: pointer;
+
+  @media screen and (max-width: 1169px) {
+    flex-direction: column;
+  }
 }
 
 .portfolio__item {
@@ -21,4 +25,9 @@
     transform: perspective(800px) rotateX(7deg) translate3d(0, -25px, 10px);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
+}
+
+.portfolio__img {
+  margin-left: auto;
+  margin-right: auto;
 }

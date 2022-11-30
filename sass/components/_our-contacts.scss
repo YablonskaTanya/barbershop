@@ -2,13 +2,15 @@
   max-width: 1600px;
   margin: 0 auto;
   background-color: #191c26;
-  background-image: url(../images/bgcont.png);
+  // background-image: url(../images/bgcont.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left calc(50% + 397px) center;
 }
 
-// .our-contacts__container {
-//   display: flex;
-//   gap: 30px;
-// }
+.our-contacts__container {
+  @media screen and (min-width: 1170px) {
+    display: flex;
+    gap: 30px;
+  }
+}
