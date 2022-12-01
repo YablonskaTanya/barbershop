@@ -6,6 +6,10 @@
   display: flex;
   text-align: center;
   gap: 24px;
+
+  @media screen and(max-width:767px) {
+    display: none;
+  }
 }
 
 .control__slider--back,

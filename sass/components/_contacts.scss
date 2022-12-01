@@ -4,7 +4,12 @@
     padding-bottom: 84px;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-basis: 570px;
     padding-top: 130px;
     padding-bottom: 120px;
@@ -22,7 +27,6 @@
 
 .contacts__subtitle {
   color: $primary-white-text-color;
-  margin-top: 70px;
 
   &::before {
     background-color: rgba(157, 164, 189, 0.4);
@@ -32,4 +36,22 @@
 .contacts__shedule {
   color: $grey-text-color;
   margin-top: 20px;
+}
+
+.contacts__container {
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    gap: 150px;
+  }
+}
+
+.contacts__container--hours {
+  @media screen and (max-width: 767px) {
+    margin-top: 44px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 70px;
+  }
 }

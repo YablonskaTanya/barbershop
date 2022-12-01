@@ -1,6 +1,6 @@
-.address {
-  margin-top: 40px;
-}
+// .address {
+//   margin-top: 40px;
+// }
 
 // .address__item {
 //   display: flex;
@@ -33,4 +33,10 @@
 
 .address__mail {
   text-decoration-line: underline;
+}
+
+.address__list {
+  @media screen and (min-width: 768px) {
+    width: 260px;
+  }
 }

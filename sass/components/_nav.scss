@@ -1,14 +1,28 @@
 .nav {
-  margin-left: 132px;
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  @media screen and(min-width:768px) {
+    margin-left: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 132px;
+  }
 }
 
 .nav__list {
   display: flex;
   align-items: center;
+
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    gap: 16px;
+  }
 }
 
 .nav__item + .nav__item {
-  margin-left: 30px;
+  @media screen and(min-width:1200px) {
+    margin-left: 30px;
+  }
 }
 
 .nav__link {

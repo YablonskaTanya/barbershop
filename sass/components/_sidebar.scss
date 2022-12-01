@@ -1,23 +1,27 @@
 .sidebar {
   position: relative;
-  padding-top: 27px;
-  padding-bottom: 58px;
-  width: 100px;
+
+  width: 90px;
 
   @media screen and(max-width:767px) {
     display: none;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 27px;
+    padding-bottom: 58px;
+    width: 100px;
   }
 }
 
 .sidebar__list {
   position: absolute;
-
   transform: rotate(-90deg);
+  align-items: center;
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
   bottom: 175px;
   left: -65px;
-  display: flex;
-  gap: 40px;
-  align-items: center;
 }
 
 .sidebar__item .social-link:hover,

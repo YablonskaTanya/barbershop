@@ -19,9 +19,16 @@
   <body>
     <!-- header -->
 
-    <!-- <header class="header" data-header>
+    <header class="header" data-header>
       <div class="container heder__container">
-        <a class="logo" href="./"><img src="./images/Logo.svg" alt="Logo" /></a>
+        <a class="logo" href="./">
+          <svg class="logo__svg" width="70" height="55">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <svg class="menu--open" width="40" height="40">
+          <use href="./images/sprite.svg#menu"></use>
+        </svg>
 
         <nav class="nav">
           <ul class="list nav__list">
@@ -48,11 +55,11 @@
           </button>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- hero -->
-      <!-- 
+
       <section class="hero">
         <div class="container hero__container">
           <div class="sidebar">
@@ -87,7 +94,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- about -->
 
@@ -225,7 +232,7 @@
 
       <section class="section barbers" id="barbers">
         <div class="container barbers__container">
-          <p class="subtitle">For true enjoyers of the atmosphere</p>
+          <p class="subtitle barbers--subtitle">For true enjoyers of the atmosphere</p>
           <h2 class="title barbers__title">Our barbers</h2>
 
           <ul class="barbers-list">
@@ -436,40 +443,44 @@
           <section class="contacts" id="contacts">
             <h2 class="contacts__title title">Contacts</h2>
 
-            <address class="address">
-              <ul class="address__list">
-                <li class="address__item">
-                  <a
-                    class="city address__link"
-                    href="https://goo.gl/maps/cGuapkQKvx5ScEeX8"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    ><svg class="address__icon address__icon--top" width="24" height="24">
-                      <use href="./images/sprite.svg#map"></use>
-                    </svg>
-                    <span>st. Vasilkovaya, 7A Kiev, 08132</span>
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a class="address__tel address__link" href="tel:+380441111111"
-                    ><svg class="address__icon" width="24" height="24">
-                      <use href="./images/sprite.svg#phone"></use>
-                    </svg>
-                    <span>+38 044 111 11 11</span>
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a class="address__mail address__link" href="mailto:barbershop@email.com"
-                    ><svg class="address__icon" width="24" height="24">
-                      <use href="./images/sprite.svg#mail"></use>
-                    </svg>
-                    <span> barbershop@email.com</span></a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="contacts__subtitle subtitle">Working hours</p>
-            <p class="contacts__shedule">Every day from 9:00 to 22:00</p>
+            <div class="contacts__container">
+              <address class="address">
+                <ul class="address__list">
+                  <li class="address__item">
+                    <a
+                      class="city address__link"
+                      href="https://goo.gl/maps/cGuapkQKvx5ScEeX8"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      ><svg class="address__icon address__icon--top" width="24" height="24">
+                        <use href="./images/sprite.svg#map"></use>
+                      </svg>
+                      <span>st. Vasilkovaya, 7A Kiev, 08132</span>
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__tel address__link" href="tel:+380441111111"
+                      ><svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#phone"></use>
+                      </svg>
+                      <span>+38 044 111 11 11</span>
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__mail address__link" href="mailto:barbershop@email.com"
+                      ><svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#mail"></use>
+                      </svg>
+                      <span> barbershop@email.com</span></a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts__container--hours">
+                <p class="contacts__subtitle subtitle">Working hours</p>
+                <p class="contacts__shedule">Every day from 9:00 to 22:00</p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -519,6 +530,54 @@
         </form>
       </div>
     </div>
+
+    <!-- mobile menu -->
+
+    <div class="mobile-menu">
+      <svg class="menu--close" width="40" height="40">
+        <use href="./images/sprite.svg#close-menu"></use>
+      </svg>
+      <nav class="menu">
+        <ul class="list menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#servises-and-prices">Services and prices</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#barbers">Barbers</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-contact">
+        <a class="menu-contact__link" href="tel:+380441111111">+38 044 111 11 11</a>
+
+        <button class="button button__menu" data-modal-open type="button">Online-booking</button>
+      </div>
+
+      <ul class="menu-sidebar__list">
+        <li class="sidebar__item">
+          <a
+            class="social-link social-link__before"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="sidebar__item">
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer nofollow"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/header-scroll.js"></script>
   </body>

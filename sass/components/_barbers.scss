@@ -8,8 +8,16 @@
 
 .barbers__title {
   margin-top: 20px;
-}
 
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-left: 130px;
+  }
+}
+.barbers--subtitle {
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-left: 130px;
+  }
+}
 .barbers__name {
   color: $title-color;
   font-family: 'Open Sans';
@@ -31,12 +39,12 @@
 .barbers-list {
   margin-top: 44px;
   display: flex;
-  @media screen and (max-width: 1169px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     gap: 64px;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
   }
