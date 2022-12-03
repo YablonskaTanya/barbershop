@@ -1879,10 +1879,10 @@ sup {
 
 .modal {
   position: absolute;
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 700px;
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 5px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1891,18 +1891,19 @@ sup {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+  padding: 40px;
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   width: 30px;
   height: 30px;
   padding: 0;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #191c26;
+  border: 1px solid #ff6c00;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2011,4 +2012,99 @@ sup {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  letter-spacing: 0.05em;
+  color: #ff6c00;
+  text-align: center;
+}
+
+.form-input {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding: 18px 12px 8px;
+  font-size: 14px;
+  outline: unset;
+  border: 1px solid #ff6c00;
+  border-radius: 0 6px 6px 0;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal__form {
+  margin-top: 30px;
+}
+
+.form-message {
+  display: block;
+  width: 100%;
+  padding: 18px 12px;
+  resize: none;
+  outline: unset;
+  border: 1px solid #ff6c00;
+  border-radius: 6px;
+}
+
+.button__form {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-agreement {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-agreement-text {
+  margin-left: 10px;
+}
+
+.form-agreement-link {
+  color: #ff6c00;
+}
+
+.form-checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.modal__form--group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.form-message {
+  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */

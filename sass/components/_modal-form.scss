@@ -1,0 +1,88 @@
+.modal__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  letter-spacing: 0.05em;
+  color: $accent-color;
+  text-align: center;
+}
+
+.form-input {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding: 18px 12px 8px;
+  font-size: 14px;
+  outline: unset;
+  border: 1px solid $accent-color;
+  border-radius: 0 6px 6px 0;
+}
+.form-field {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal__form {
+  margin-top: 30px;
+}
+
+.form-message {
+  display: block;
+  width: 100%;
+  padding: 18px 12px;
+  resize: none;
+  outline: unset;
+  border: 1px solid $accent-color;
+  border-radius: 6px;
+}
+
+.button__form {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-agreement {
+  display: block;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-agreement-text {
+  margin-left: 10px;
+}
+.form-agreement-link {
+  color: $accent-color;
+}
+
+.form-checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.modal__form--group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-message {
+  margin-top: 30px;
+}

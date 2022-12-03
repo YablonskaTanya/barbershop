@@ -680,23 +680,79 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
-        <form>
-          <label for="name">
-            <input type="text" />
-            <span></span>
+        <p class="modal__title">Leave your details, we will contact soon</p>
+        <form class="modal__form">
+          <div class="modal__form--group">
+            <label class="form-field" for="name">
+              <span class="form-thumb">
+                <!-- <svg class="form-icon" width="" height="">
+                  <use href=""></use>
+                </svg> -->
+              </span>
+              <input
+                class="form-input"
+                type="text"
+                name="user_name"
+                placeholder="John Doe"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                required
+              />
+              <span class="form-label">Name</span>
+            </label>
+            <label class="form-field">
+              <span class="form-thumb">
+                <!-- <svg class="form-icon" width="" height="">
+                  <use href=""></use>
+                </svg> -->
+              </span>
+              <input
+                class="form-input"
+                type="email"
+                name="user_mail"
+                placeholder="example@mail.com"
+                required
+              />
+              <span class="form-label">Email</span>
+            </label>
+            <label class="form-field">
+              <span class="form-thumb">
+                <!-- <svg class="form-icon" width="" height="">
+                  <use href=""></use>
+                </svg> -->
+              </span>
+              <input
+                class="form-input"
+                type="tel"
+                name="user_phone"
+                placeholder="+38 (099) 123-45-67 "
+              />
+              <span class="form-label">Phone</span>
+            </label>
+          </div>
+
+          <label class="form-field">
+            <textarea
+              class="form-message"
+              name="user_message"
+              rows="5"
+              placeholder="&nbsp;"
+            ></textarea>
+            <span class="form-label">Comment</span>
           </label>
-          <label for="name">
-            <input type="text" />
-            <span></span>
+
+          <label class="form-agreement">
+            <input class="form-checkbox" type="checkbox" name="agreement-checkbox" checked="" />
+
+            <!-- <svg class="form-checkbox-icon" width="" height="">
+              <use class="unchecked" href=""></use>
+              <use class="checked" href=""></use>
+            </svg> -->
+            <span class="form-agreement-text">
+              Agree to
+              <a class="form-agreement-link link" href="">terms and conditions</a>
+            </span>
           </label>
-          <label for="name">
-            <input type="text" />
-            <span></span>
-          </label>
-          <label for="">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <span></span>
-          </label>
+          <button class="button button__form" type="submit">Send</button>
         </form>
       </div>
     </div>
