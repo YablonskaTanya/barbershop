@@ -2,10 +2,38 @@
   max-width: 1600px;
   margin: 0 auto;
   background-color: #191c26;
-  // background-image: url(../images/bgcont.png);
+  background-image: url(../images/contacts/contacts-480@1x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left calc(50% + 397px) center;
+  background-position-y: bottom;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/contacts-480@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/contacts/contacts-768@1x.png);
+    background-position-y: bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/contacts-768@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/contacts/contacts-1200@1x.png);
+    background-position: left calc(50% + 397px) center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/contacts-1200@2x.png);
+    }
+  }
 }
 
 .our-contacts__container {

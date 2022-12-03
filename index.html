@@ -103,13 +103,30 @@
           <div class="about-left">
             <ul class="about__list">
               <li class="about__item">
-                <img class="about__image" src="./images/shave.jpg" width="270" alt="barber shave" />
+                <img
+                  class="about__image"
+                  srcset="
+                    ./images/about/img1-330@1x.jpg 330w,
+                    ./images/about/img1-660@2x.jpg 660w,
+                    ./images/about/img1-270@1x.jpg 270w,
+                    ./images/about/img1-540@2x.jpg 540w
+                  "
+                  src="./images/feature/img2-480:418@1x.jpg "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, 100vw"
+                  alt="barber shave"
+                />
               </li>
               <li class="about__item">
                 <img
                   class="about__image"
-                  src="./images/haircut.jpg"
-                  width="270"
+                  srcset="
+                    ./images/about/img2-330@1x.jpg 330w,
+                    ./images/about/img2-660@2x.jpg 660w,
+                    ./images/about/img2-270@1x.jpg 270w,
+                    ./images/about/img2-540@2x.jpg 540w
+                  "
+                  src="./images/feature/img2-480:418@1x.jpg "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, 100vw"
                   alt="badber haircuts"
                 />
               </li>
@@ -237,7 +254,42 @@
 
           <ul class="barbers-list">
             <li class="barbers-list__item">
-              <img class="barbers__img" src="./images/john.jpg" width="370" alt="John Smith" />
+              <picture>
+                <!-- mobile -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/barbers/img1-480:418@1x.jpg 1x,
+                    ./images/barbers/img1-480:836@2x.jpg 2x
+                  "
+                />
+
+                <!-- tablet -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/barbers/img1-768:450@1x.jpg 1x,
+                    ./images/barbers/img1-768:900@2x.jpg 2x
+                  "
+                />
+
+                <!-- desktop -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/barbers/img1-1200:370@1x.jpg 1x,
+                    ./images/barbers/img1-1200:740@2x.jpg 2x
+                  "
+                />
+
+                <!-- default -->
+
+                <img class="" src="./images/barbers/img1-480:418@1x.jpg" loading="lazy" />
+              </picture>
+
               <div>
                 <h3 class="barbers__name">John Smith</h3>
                 <p class="barbers__vocation">Extreme Barber</p>
@@ -276,7 +328,42 @@
               </div>
             </li>
             <li class="barbers-list__item">
-              <img class="barbers__img" src="./images/michele.jpg" width="370" alt="Michele Doe" />
+              <picture>
+                <!-- mobile -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/barbers/img2-480:418@1x.jpg 1x,
+                    ./images/barbers/img2-480:836@2x.jpg 2x
+                  "
+                />
+
+                <!-- tablet -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/barbers/img2-768:450@1x.jpg 1x,
+                    ./images/barbers/img2-768:900@2x.jpg 2x
+                  "
+                />
+
+                <!-- desktop -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/barbers/img2-1200:370@1x.jpg 1x,
+                    ./images/barbers/img2-1200:740@2x.jpg 2x
+                  "
+                />
+
+                <!-- default -->
+
+                <img class="" src="./images/barbers/img2-480:418@1x.jpg" loading="lazy" />
+              </picture>
+
               <div>
                 <h3 class="barbers__name">Michele Doe</h3>
                 <p class="barbers__vocation">Extreme Barber</p>
@@ -314,8 +401,42 @@
                 </div>
               </div>
             </li>
-            <li class="barbes-list__item">
-              <img class="barbers__img" src="./images/alan.jpg" width="370" alt="Alan Black" />
+            <li class="barbers-list__item">
+              <picture>
+                <!-- mobile -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/barbers/img3-480:418@1x.jpg 1x,
+                    ./images/barbers/img3-480:836@2x.jpg 2x
+                  "
+                />
+
+                <!-- tablet -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/barbers/img3-768:450@1x.jpg 1x,
+                    ./images/barbers/img3-768:900@2x.jpg 2x
+                  "
+                />
+
+                <!-- desktop -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/barbers/img3-1200:370@1x.jpg 1x,
+                    ./images/barbers/img3-1200:740@2x.jpg 2x
+                  "
+                />
+
+                <!-- default -->
+
+                <img class="" src="./images/barbers/img3-480:418@1x.jpg" loading="lazy" />
+              </picture>
               <div>
                 <h3 class="barbers__name">Alan Black</h3>
                 <p class="barbers__vocation">Extreme Barber</p>
@@ -367,28 +488,65 @@
             <li class="portfolio__item">
               <img
                 class="portfolio__img"
-                src="./images/haircutting.jpg"
-                width="270"
-                alt="haircut"
-              />
-            </li>
-            <li class="portfolio__item">
-              <img class="portfolio__img" src="./images/snaving.jpg" width="270" alt="snaving" />
-            </li>
-            <li class="portfolio__item">
-              <img
-                class="portfolio__img"
-                src="./images/steamout.jpg"
-                width="270"
-                alt="steam out face"
+                srcset="
+                  ./images/feature/img1-480:418@1x.jpg  418w,
+                  ./images/feature/img1-480:836@2x.jpg  836w,
+                  ./images/feature/img1-768:450@1x.jpg  330w,
+                  ./images/feature/img1-768:900@2x.jpg  660w,
+                  ./images/feature/img1-1200:270@1x.jpg 270w,
+                  ./images/feature/img1-1200:540@2x.jpg 540w
+                "
+                src="./images/feature/img1-480:418@1x.jpg "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                alt="barbers"
               />
             </li>
             <li class="portfolio__item">
               <img
                 class="portfolio__img"
-                src="./images/shaverazor.jpg"
-                width="270"
-                alt="shave a razor"
+                srcset="
+                  ./images/feature/img2-480:418@1x.jpg  418w,
+                  ./images/feature/img2-480:836@2x.jpg  836w,
+                  ./images/feature/img2-768:450@1x.jpg  330w,
+                  ./images/feature/img2-768:900@2x.jpg  660w,
+                  ./images/feature/img2-1200:270@1x.jpg 270w,
+                  ./images/feature/img2-1200:540@2x.jpg 540w
+                "
+                src="./images/feature/img2-480:418@1x.jpg "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                alt="barbers"
+              />
+            </li>
+            <li class="portfolio__item">
+              <img
+                class="portfolio__img"
+                srcset="
+                  ./images/feature/img3-480:418@1x.jpg  418w,
+                  ./images/feature/img3-480:836@2x.jpg  836w,
+                  ./images/feature/img3-768:450@1x.jpg  330w,
+                  ./images/feature/img3-768:900@2x.jpg  660w,
+                  ./images/feature/img3-1200:270@1x.jpg 270w,
+                  ./images/feature/img3-1200:540@2x.jpg 540w
+                "
+                src="./images/feature/img3-480:418@1x.jpg "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                alt="barbers"
+              />
+            </li>
+            <li class="portfolio__item">
+              <img
+                class="portfolio__img"
+                srcset="
+                  ./images/feature/img4-480:418@1x.jpg  418w,
+                  ./images/feature/img4-480:836@2x.jpg  836w,
+                  ./images/feature/img4-768:450@1x.jpg  330w,
+                  ./images/feature/img4-768:900@2x.jpg  660w,
+                  ./images/feature/img4-1200:270@1x.jpg 270w,
+                  ./images/feature/img4-1200:540@2x.jpg 540w
+                "
+                src="./images/feature/img4-480:418@1x.jpg "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                alt="barbers"
               />
             </li>
           </ul>
