@@ -61,8 +61,11 @@
   }
 }
 
-.menu--open {
+.button-menu__open {
   margin-left: auto;
+  border: none;
+  background: transparent;
+
   @media screen and(min-width:768px) {
     display: none;
   }

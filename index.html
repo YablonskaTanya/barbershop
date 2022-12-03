@@ -26,9 +26,21 @@
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <svg class="menu--open" width="40" height="40">
-          <use href="./images/sprite.svg#menu"></use>
-        </svg>
+        <button
+          class="button-menu__open js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="button-menu__icon--open"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
 
         <nav class="nav">
           <ul class="list nav__list">
@@ -691,52 +703,63 @@
 
     <!-- mobile menu -->
 
-    <div class="mobile-menu">
-      <svg class="menu--close" width="40" height="40">
-        <use href="./images/sprite.svg#close-menu"></use>
-      </svg>
-      <nav class="menu">
-        <ul class="list menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#about">About</a>
+    <div class="container menu-container js-menu-container" id="mobile-menu">
+      <button class="button-menu__close js-close-menu" type="button">
+        <svg
+          class="button-menu--icon"
+          width="40"
+          height="40"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu__info">
+        <nav class="menu">
+          <ul class="list menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#servises-and-prices">Services and prices</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#barbers">Barbers</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-contact">
+          <a class="menu-contact__link" href="tel:+380441111111">+38 044 111 11 11</a>
+
+          <button class="button button__menu" data-modal-open type="button">Online-booking</button>
+        </div>
+
+        <ul class="menu-sidebar__list">
+          <li class="sidebar__item">
+            <a
+              class="social-link social-link__before"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#servises-and-prices">Services and prices</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#barbers">Barbers</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contacts">Contacts</a>
+          <li class="sidebar__item">
+            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer nofollow"
+              >Youtube</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <div class="menu-contact">
-        <a class="menu-contact__link" href="tel:+380441111111">+38 044 111 11 11</a>
-
-        <button class="button button__menu" data-modal-open type="button">Online-booking</button>
       </div>
-
-      <ul class="menu-sidebar__list">
-        <li class="sidebar__item">
-          <a
-            class="social-link social-link__before"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >Instagram</a
-          >
-        </li>
-        <li class="sidebar__item">
-          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-            >Youtube</a
-          >
-        </li>
-      </ul>
     </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
