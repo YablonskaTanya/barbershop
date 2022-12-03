@@ -100,6 +100,11 @@
   letter-spacing: 0.05em;
   margin-top: 20px;
 
+  @media screen and(max-width: 480px) {
+    font-size: 40px;
+    line-height: calc(85 / 72);
+  }
+
   @media screen and(min-width:768px) {
     font-size: 72px;
     line-height: calc(85 / 72);
@@ -116,12 +121,12 @@
   line-height: calc(25 / 16);
 
   margin-top: 20px;
-  width: 357px;
+  flex-basis: 357px;
 
   animation: slider-to-top 500ms ease-out 1200ms both;
 
   @media screen and(max-width:767px) {
-    width: 336px;
+    flex-basis: 336px;
   }
 
   @media screen and(min-width:768px) {

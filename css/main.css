@@ -283,7 +283,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -817,6 +817,12 @@ img {
   letter-spacing: 0.05em;
   margin-top: 20px;
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 40px;
+    line-height: 1.1805555556;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     font-size: 72px;
@@ -835,13 +841,15 @@ img {
   font-size: 16px;
   line-height: 1.5625;
   margin-top: 20px;
-  width: 357px;
+  -ms-flex-preferred-size: 357px;
+      flex-basis: 357px;
   -webkit-animation: slider-to-top 500ms ease-out 1200ms both;
           animation: slider-to-top 500ms ease-out 1200ms both;
 }
 @media screen and (max-width: 767px) {
   .hero__text {
-    width: 336px;
+    -ms-flex-preferred-size: 336px;
+        flex-basis: 336px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -972,7 +980,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .about__title {
-    width: 306px;
+    -ms-flex-preferred-size: 306px;
+        flex-basis: 306px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1168,7 +1177,7 @@ sup {
   text-align: center;
   display: block;
   padding: 20px 24px;
-  width: 193px;
+  max-width: 193px;
 }
 @media screen and (min-width: 768px) {
   .feature__item {
@@ -1228,14 +1237,16 @@ sup {
 }
 @media screen and (min-width: 768px) {
   .feature__container--second {
-    width: 500px;
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .feature__container--first {
     margin-top: 44px;
-    width: 450px;
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
     margin-left: auto;
   }
 }
@@ -1256,7 +1267,8 @@ sup {
 }
 @media screen and (max-width: 767px) {
   .feature__text {
-    width: 418px;
+    -ms-flex-preferred-size: 418px;
+        flex-basis: 418px;
   }
 }
 
@@ -1539,6 +1551,7 @@ sup {
 
 .booking__form--input,
 .booking__form--textarea {
+  max-width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9da4bd;

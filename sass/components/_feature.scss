@@ -18,7 +18,7 @@
   text-align: center;
   display: block;
   padding: 20px 24px;
-  width: 193px;
+  max-width: 193px;
 
   @media screen and (min-width: 768px) {
     width: 210px;
@@ -77,14 +77,14 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-    width: 500px;
+    flex-basis: 500px;
   }
 }
 
 .feature__container--first {
   @media screen and (max-width: 1199px) {
     margin-top: 44px;
-    width: 450px;
+    flex-basis: 450px;
     margin-left: auto;
   }
 }
@@ -103,6 +103,6 @@
   margin-top: 20px;
 
   @media screen and (max-width: 767px) {
-    width: 418px;
+    flex-basis: 418px;
   }
 }
